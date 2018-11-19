@@ -1,18 +1,18 @@
-# Next.js + Fonts
+# Next.js + Jsons
 
-Import fonts in [Next.js](https://github.com/zeit/next.js)
-(woff, woff2, eot, ttf & otf)
+Import json in [Next.js](https://github.com/zeit/next.js)
+(jsons)
 
 ## Installation
 
 ```
-npm install --save next-fonts
+npm install --save next-jsons
 ```
 
 or
 
 ```
-yarn add next-fonts
+yarn add next-jsons
 ```
 
 ## Usage
@@ -21,16 +21,16 @@ Create a `next.config.js` in your project
 
 ```js
 // next.config.js
-const withFonts = require('next-fonts')
-module.exports = withFonts()
+const withJsons = require('next-jsons')
+module.exports = withJsons()
 ```
 
 Optionally you can add your custom Next.js configuration as parameter
 
 ```js
 // next.config.js
-const withFonts = require('next-fonts')
-module.exports = withFonts({
+const withFonts = require('next-jsons')
+module.exports = withJsons({
   webpack(config, options) {
     return config
   }
